@@ -18,15 +18,7 @@ public class OrdersvcApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {
-
-			System.out.println("Starting up");
-/*
-			String[] beanNames = ctx.getBeanDefinitionNames();
-			Arrays.sort(beanNames);
-			for (String beanName : beanNames) {
-				System.out.println(beanName);
-			}
-*/
+			System.out.println("Starting order service");
 		};
 	}
 

@@ -61,8 +61,8 @@ public class Order {
         this.updatedDate = new Date();
     }
 
-    public void deleteOrder(OrderDto orderDto) {
-        this.id = orderDto.getId();
+    public void deleteOrder(String id) {
+        //TODO: add business logic to require pre-shipment
         this.orderStatus = "deleted";
         this.updatedDate = new Date();
     }
